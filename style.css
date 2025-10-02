@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  min-height: 100vh;
+  background: url("background.jpg") center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+header {
+  background-color: aliceblue;
+  text-align: center;
+  padding: 25px 20px;
+  color: rgb(78, 85, 137);
+  border-radius: 20px 20px 0 0;
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+  color: #fff;
+}
+
+.main h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.main p {
+  font-size: 25px;
+  line-height: 1.6;
+  text-align: justify;
+  color: #fff;
+  max-width: 900px;
+}
+
+.main .social-icons {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.main .social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 40px;
+  transition: all 0.3s ease;
+}
+
+.main .social-icons a:hover {
+  background: #fff;
+  color: rgb(78, 85, 137);
+  transform: scale(1.1);
+}
+
+.main .image {
+  margin: 20px 0;
+}
+
+.main .image .circle img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15%;
+  border: 4px solid #fff;
+}
+
+.main .datetime {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.datetime p {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  font-weight: bold;
+  margin-top: 10px;
+}
