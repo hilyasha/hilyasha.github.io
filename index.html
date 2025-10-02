@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Let's Connect.</h1>
+      </header>
+
+      <section class="main">
+        <div class="image">
+          <div class="circle">
+            <img src="foto_hilya.jpg" alt="Profile Picture" />
+          </div>
+        </div>
+
+        <h1>Hilya Shafwa Najla Abadi</h1>
+        <p>
+          Hello! I am a third-semester student at Telkom University majoring in
+          Sistem Informasi under the Faculty of Industrial Engineering. My
+          student ID number is 102022400234. Let's connect through one of the
+          below.
+        </p>
+
+        <div class="social-icons">
+          <a href="https://github.com/hilyasha" target="_blank"
+            ><i class="ri-github-fill"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/hilya-shafwa-najla-abadi-0879a8328/"
+            target="_blank"
+            ><i class="ri-linkedin-fill"></i
+          ></a>
+          <a href="https://www.instagram.com/hilyashfae" target="_blank"
+            ><i class="ri-instagram-fill"></i
+          ></a>
+          <a href="mailto:sendtohilya@gmail.com" target="_blank"
+            ><i class="ri-mail-fill"></i
+          ></a>
+        </div>
+
+        <div class="datetime">
+          <h2>Current Date & Time</h2>
+          <p id="datetime"></p>
+        </div>
+
+        <script>
+          function updateDateTime() {
+            const now = new Date();
+            document.getElementById("datetime").innerHTML =
+              now.toLocaleString();
+          }
+          updateDateTime();
+          setInterval(updateDateTime, 1000);
+        </script>
+      </section>
+    </div>
+  </body>
+</html>
